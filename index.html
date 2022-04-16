@@ -1,0 +1,106 @@
+<!--
+=========================================================
+* Material Kit 2 - v3.0.2
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Startup</title>
+
+    <!-- Required meta tags.
+    this allows us to add new info to our html page.
+    utf-8 means we are using this form of encoding
+    to write text. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- cdn = content delivery network -->
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+ 
+  <body>
+   <!-- The first thing we want to do is create
+  a class of container inside the body.
+
+    We walso want to use flexbox in order to get this content to the middle instead of at the top of the page
+    so we need to use d-flex in order to first ENABLE the flexbox. The we can use flexbox behaviors. So now we
+    can use align-items center now that we found on the website. At this point it's still not working. Why?
+    if we debug using developer tools on the website, w ehave the container and then the body. Everything is in the container. We can see that the container is NOT the full page it is only the top part. therefore it is not centering on the page but the container itself. It is not covering the full page. So just like we did in 
+    body and lok at the styles and see that we had height 
+    at 100%. All we need to do is tell the container, hey i
+    want you to span the entire height of the page. In bootstrap we can simply do that by saying h-100
+   -->
+    <div class="container d-flex align-items-center h-100">
+      <!-- next we want the h1,hr and button to just be
+      in a row.that's in the center of the page
+      so we will wrap them in a div and give
+      them a class of row  -->
+      <div class="row">
+        <!-- next let's divide up each item,
+        h1,hr adn button into different sections -->
+
+        
+
+        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+        <div class="rotating-card-container">
+          <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+            <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+              <div class="card-body py-7 text-center">
+                <i class="material-icons text-white text-4xl my-3">Candice Frazier</i>
+
+
+
+                <h3 class="text-white">Welcome To Your New Beginning</h3>
+                <p class="text-white opacity-8">Be the FIRST to get info on when my startup launches and further updates on my  company! Coming very soon!</p>
+              </div>
+            </div>
+            <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+              <div class="card-body pt-7 text-center">
+                <h3 class="text-white">Discover More</h3>
+                <p class="text-white opacity-8"> Want a sneakpeak? I'm going to give you an insight on some of the services you'll receieve!</p>
+                <a href="./pages/sneakpeek.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Start Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- we want to have some space between the
+        writing and the button so we want another section in between these two that will help buffer them from each other. we'll need to write
+        the styles for this class btw   -->
+
+        <!-- This section element will also have the class
+        text-center but in order for it to take up the page
+        we will need to use col-12 for both header
+        and section.-->
+      <section class="text-center col-12">
+    <!-- hr is jsut a horizontal line. -->
+        <hr>
+        <!-- our link for our button that goes to our form -->
+        <a href="https://mailchi.mp/3650e9b5ee4f/cfclients"> 
+        <button class="btn btn-primary btn-xl">Find out more</button>
+          </a>
+        </section> 
+      </div>
+    </div>
+  </body>
+</html>
